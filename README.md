@@ -1,4 +1,4 @@
-There is at least 3 ways to consume the LemonWay API in PHP
+There are at least 3 ways to consume the LemonWay API in PHP
 
  1. **[SoapClient]**: the casual method in PHP to consume any Web Service. It is the simplest way.
  2. **[SoapClient SDK]**: same with the first method, but all the structure of requests / responses are generated overhead with [`wsdl2phpgenerator`](http://wsdl2phpgenerator.github.io/wsdl2phpgenerator/)
