@@ -1,8 +1,14 @@
-There are at least 3 ways to consume the LemonWay API in PHP
+The LemonWay API (called Directkit) has two implementations: Directkit**Json2** and Directkit**Xml**. 
+There are different ways to call the service depends on the implementation you chose.
 
- 1. **[SoapClient]**: the casual method in PHP to consume any Web Service. It is the simplest way.
+The best way to access to directkit**Json2** is to use the [`curl_init`] function to send POST request to the Directkit**Json2** service. 
+It is the simplest and the most network-efficient way. 
+ 
+If you don't like the json format, you can also send SOAP (XML) requests to Directkit**Xml**, you can do it in 3 different ways:
+
+ 1. **[SoapClient]**: the casual method in PHP to consume any Web Service. It is the simplest way to access to SOAP request.
  2. **[SoapClient SDK]**: same with the first method, but all the structure of requests / responses are generated overhead with [`wsdl2phpgenerator`](http://wsdl2phpgenerator.github.io/wsdl2phpgenerator/)
- 3. **[LemonWay SDK]**: call the web service as a normal http request [`curl_init`](http://php.net/manual/en/function.curl-init.php). The SDK will help you to parse the SOAP response.
+ 3. **[LemonWay SDK]**: call the web service as a normal http request [`curl_init`]. The SDK will help you to parse the SOAP response.
 
 This example demonstrates the second method.
 
@@ -96,3 +102,4 @@ ini_set("soap.wsdl_cache_ttl", 10);
 [SoapClient SDK]: https://github.com/lemonwaysas/php-client-directkit-xml-soap-sdk
 [LemonWay SDK]: https://github.com/lemonwaysas/php-client-directkit-xml
 [Lemonway Directkit API]: http://documentation.lemonway.fr/
+[`curl_init`]: http://php.net/manual/en/function.curl-init.php
