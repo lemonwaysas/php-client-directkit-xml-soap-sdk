@@ -1,3 +1,5 @@
+⚠️WARNING: This client is deprecated⚠️ 
+
 The LemonWay API (called Directkit) has two implementations: Directkit**Json2** and Directkit**Xml**. 
 There are different ways to call the service depends on the implementation you chose.
 
